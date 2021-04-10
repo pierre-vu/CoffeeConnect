@@ -1,0 +1,101 @@
+body {
+    background: #336666;
+    /* background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("background.jpg"); */
+    margin: 0;
+}
+header{
+    background: #336666;
+    padding: 10px;
+    
+}
+header h1{ /*Main header: "Coffee Near You"*/
+    margin: auto; 
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 65px;
+    padding-top: 4vh;
+    margin-left: -4vw;
+    color: white;
+}
+.navbar {
+    position: fixed;
+    width: 16vw;
+    height: 100%;
+    margin-left: 0px;
+    margin-top: -12.7vh;
+    
+    background: rgba(44, 79, 79, 0.89);
+}
+.logo{
+    position: absolute;
+    width: 70px;
+    height: 90px;
+    left: 1.5vw;
+    top: 1vw;
+    
+    }
+.profileLogo{
+    position: absolute;
+width: 95px;
+height: 95px;
+right: 2.5vw;
+top: 1.5vw;
+
+background-color: #336666;
+}
+.friends{
+    position: absolute;
+    width: 127px;
+    height: 47px;
+    left: 4vw;
+    top: 300px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+}
+.explore{
+    position: absolute;
+    width: 210px;
+    height: 47px;
+    left: 4vw;
+    top: 200px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    text-decoration: none;
+    color: #FFE600;
+}
+div.post{ /*Card*/
+    background: white;
+    margin-top: 6vh;
+}
+div.post img{ /*image of coffee shop*/
+    width: 100%;
+}
+div.post h2{ /*Title of coffee shop on card*/
+    margin-top: 0px;
+    font-family: Roboto;
+    margin-bottom: -2px;
+}
+div.post span{ /*distance from the user*/
+    padding-left: 25px;
+    font-weight: bold; 
+}
+div.post h2, div.post p{ /*Title and description of coffee shop in card*/
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+div.container{
+    width: 45vw;
+    margin: auto;
+}
