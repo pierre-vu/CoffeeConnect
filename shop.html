@@ -19,7 +19,7 @@
             body {
                 background: #EFE0BB;
                 box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-                color: #ffff;
+                color: #EFE0BB;
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
                 font-size: 16px;
                 line-height: 1.5;
@@ -86,7 +86,7 @@
             }
             .log_output{
                 border:1px solid #3B271D;
-                color:#fff;
+                color:#EFE0BB;
                 font-size:25px;
                 
                 width:100%;
@@ -109,11 +109,31 @@
             
             /* The navigation menu links */
             .sidebar a {
-                padding: 6px 8px 6px 16px;
-                text-decoration: none;
-                font-size: 25px;
-                color: #fff;
-                display: block;
+                position: absolute;
+                width: 127px;
+                height: 47px;
+                left: 4vw;
+                
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 47px;
+                color: #EFE0BB;
+            }
+            .friends{
+                position: absolute;
+                width: 127px;
+                height: 47px;
+                left: 4vw;
+                top: 300px;
+                
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 47px;
+                color: #EFE0BB;
             }
 
             /* When you mouse over the navigation links, change their color */
@@ -130,6 +150,20 @@
                 left:60%;
                 position: absolute;
                 top:20%;
+            }
+            .profileLogo{
+                position: absolute;
+                width: 95px;
+                height: 95px;
+                right: 2.5vw;
+                top: 1.5vw;
+            }
+            .logo{
+                position: absolute;
+                width: 70px;
+                height: 90px;
+                left: 2vw;
+                top: 1.8vw;
             }
             .time {
                 position: absolute;
@@ -155,11 +189,18 @@
 	</head>
 	<body>
         <div class="sidebar">
-            <a href="index.html">Home</a>
-            <a href="about.html">Explore</a>
-            <a href="portfolio.html">Friends</a>
+            <div>
+                <img src= "pictures/logo.png" class="logo">
+            </div>
+            <a href="home.html" style= "text-decoration: none; color: #EFE0BB; top: 200px">explore</a>
+            <a href="home.html" style= "text-decoration: none; color: #EFE0BB; top: 300px">friends</a>
+            <a href="home.html" style= "text-decoration: none; color: #EFE0BB; top: 90vh; left: 1.5vw;">back</a>
             <br>
         </div>
+
+        <a href = "profile.html">
+            <img src="pictures/profile.png" class="profileLogo">
+        </a>
 
         <!-- Page content -->
         <div class="desc">Description
@@ -170,8 +211,8 @@
         <div class="main">
         
 		  <div id = "introduction">		
-              <div class="name">Harvest Coffee Bar</div>
-              <div class="address">1037 University Dr Suite 109, College Station, TX 77840</div>
+              <div class="name" style = "color: #3B271D;">Harvest Coffee Bar</div>
+              <div class="address" style = "color: #3B271D;">1037 University Dr Suite 109, College Station, TX 77840</div>
               
         </div>
         </div>
