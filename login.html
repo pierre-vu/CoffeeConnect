@@ -13,6 +13,7 @@
                 left: 50%;
                 margin-right: -50%;
                 transform: translate(-50%, -50%) }
+            form {}
 
             input[type=text], input[type=password] {
                 width: 100%;
@@ -78,7 +79,7 @@
 
     <body>
             <h2><b>Coffee</b> <span class = "regColor">Connect</span></h2>
-        <form action="home.html">
+        <form action="/action_page.php" method="post">
 
             <div class="container">
                 <label for="uname"><b>Username</b></label>
@@ -88,15 +89,12 @@
 
                 <input type="password" placeholder="Enter Password" name="password" required>
                 <div class="buttonh">
+                    <button type="submit">REGISTER</button>
                     <button type="submit">LOGIN</button>
                 </div>
             </div>
+
         </form>
-        <div class = "buttonh">
-            <a href = "signup.html">
-                <button type="submit">REGISTER</button>
-            </a>
-        </div>
     </body>
 
 </html>
