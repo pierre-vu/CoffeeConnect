@@ -17,7 +17,8 @@
                 font-size: 40px;
             }
             body {
-                background: #EFE0BB;
+                background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url("pictures/background.png");
+                background-position-x: right;
                 box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
                 color: #EFE0BB;
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -55,7 +56,7 @@
                 min-height: 400px;
                 left: 25%;
                 top: 20%;
-
+                padding-top: 10px;
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: bold;
@@ -63,7 +64,11 @@
                 line-height: 29px;
                 text-align: center;
                 word-wrap: break-word;
-
+            }
+            .descInfo{
+                font-weight: normal;
+                font-size: 20px;
+                padding: 20px;
             }
             .recc {
                 position: absolute;
@@ -82,7 +87,8 @@
                 text-align: center;
                 display: inline;
                 word-wrap: break-word;
-
+                padding-top: 10px;
+                padding-bottom: 10px;
             }
             .log_output{
                 border:1px solid #3B271D;
@@ -138,7 +144,7 @@
 
             /* When you mouse over the navigation links, change their color */
             .sidebar a:hover {
-                color: #3B271D;
+                color: #3b1d1d;
             }
 
             /* Style page content */
@@ -150,6 +156,7 @@
                 left:60%;
                 position: absolute;
                 top:20%;
+                width: auto;
             }
             .profileLogo{
                 position: absolute;
@@ -170,7 +177,7 @@
                 
                 background: #3B271D;
                 position: absolute;
-                width: 85%;
+                width: 76%;
                 min-height: 200px;
                 top:110%;
                 left:140%;
@@ -179,9 +186,12 @@
                 font-weight: bold;
                 font-size: 25px;
                 line-height: 29px;
+                /* padding-left: 30px; */
+                padding-top: 10px;
+                padding-bottom: 10px;
                 text-align: center;
-                display: inline;
-                word-wrap: break-word;
+                /* display: inline; */
+                /* word-wrap: break-word; */
 
             }
 
@@ -204,8 +214,13 @@
 
         <!-- Page content -->
         <div class="desc">Description
-        <div class="recc">Reccommended by:</div>
-            <div class="time">Mon <br>Tue<br>Wed<br>Thu<br>Fri<br>Sat<br>Sun</div>
+            <div class = "descInfo"> Harvest Coffee is a Wings galão sweet, viennese, frappuccino single shot java cup wings kopi-luwak. Siphon cortado, seasonal decaffeinated that et doppio whipped dark doppio mazagran. Ut qui, ut grounds fair trade redeye mocha single origin.
+
+                Single shot as irish eu cup caffeine as blue mountain. Wings instant, bar...</div>
+        <div class="recc">Recommended by:
+            <div class = "descInfo"> Nicholas Soliman, Joanna Zhou, Pierre Vu, Gian Lezotte, and 6 others...</div>
+        </div>
+            <div class="time">Mon:   8 a.m. - 10 p.m. <br>Tue:   8 a.m. - 10 p.m.<br>Wed:   8 a.m. - 10 p.m.<br>Thu:   8 a.m. - 10 p.m.<br>Fri:   8 a.m. - 11 p.m.<br>Sat:   9 a.m. - 7 p.m.<br>Sun:   9 a.m. - 7 p.m.</div>
         </div>
         <div class = "map"><img src="pictures/coffeemap.png" alt="Picture of Me" style ="width:400px; height: 400px; "></div>
         <div class="main">
