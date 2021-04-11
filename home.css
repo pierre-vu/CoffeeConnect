@@ -101,3 +101,9 @@ div.container{
     width: 45vw;
     margin: auto;
 }
+.post:hover{
+    transform: scale(1.03);
+    transition-duration: 0.3s;
+    /* transition-timing-function: ease-in-out;
+    transform: translateY(-20px);  */
+}
