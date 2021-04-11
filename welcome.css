@@ -1,0 +1,78 @@
+
+html, body {
+    min-height: 100%;
+    background: #FBF3DF;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, ul, ol {
+    margin: 0;
+}
+
+#coffee-connect {
+    position: absolute;
+    width: 27%;
+    height: 9%;
+    left: 17%;
+    top: 4%;
+
+    font-size: 70px;
+}
+#coffee {
+    color:#A15740;
+}
+
+#login {
+    position: absolute;
+    width: 83px;
+    height: 35px;
+    left: 71%;
+    top: 6%;
+
+    font-size: 25px;
+}
+
+#signup {
+    position: absolute;
+    width: 7%;
+    height: 5%;
+    left: 78%;
+    top: 8%;
+
+    background: #DFD7C1;
+    border-radius: 40px;
+    border: none;
+
+    font-family: Roboto;
+    font-size: 24px;
+    color: white;
+}
+#signup:hover {
+    -o-transition:.2s; /* opera > 12.1 */
+    -ms-transition:.2s; /* internet explorer */
+    -moz-transition:.2s; /* firefox < 16 */
+    -webkit-transition:.2s; /* safari, chrome, and opera > 12.1 */
+    transition:.2s;
+
+    cursor: pointer;
+    outline: none;
+    color: #A15740;
+  
+}
+#signup:focus {
+    outline: none;
+}
+
+#main-text {
+    position: absolute;
+    width: 31%;
+    height: 43%;
+    left: 333px;
+    top: 243px;
+
+    font-size: 25px;
+}
+#main-title {
+    font-size: 80px;
+}
