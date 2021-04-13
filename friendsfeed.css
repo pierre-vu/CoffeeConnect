@@ -75,3 +75,38 @@ div.container{
     width: 45vw;
     margin: auto;
 }
+div.post{ /*Card*/
+    background: #3B271D;
+    margin-top: 6vh;
+    border-radius: 15px 15px 25px 25px;
+    border: 5px solid #3B271D;
+}
+div.post h2{ /*Name of person posting*/
+    margin-top: 0px;
+    font-family: Roboto;
+    margin-bottom: -2px;
+    text-decoration: none;
+    font-size: 32px;
+}
+div.post p{
+    font-size: 20px;
+}
+div.post span{ /*How recent post was created*/
+    padding-left: 25px;
+    font-weight: bold; 
+    color: #C7934E;
+}
+div.post h2, div.post p{ /*Name and post contents*/
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    color: #EFE0BB;
+    text-decoration: none;
+}
+.post:hover{
+    transform: scale(1.03);
+    transition-duration: 0.3s;
+}
+.post h2:hover{
+    color: #A05E2B;
+}
