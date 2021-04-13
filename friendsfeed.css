@@ -1,0 +1,77 @@
+body {
+    /* background: #EFE0BB; */
+    background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url("pictures/background.png");
+    background-position-x: right;
+    margin: 0;
+}
+header h1{ /*Main header: "Coffee Near You"*/
+    margin: auto; 
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 65px;
+    padding-top: 4vh;
+    margin-left: -4vw;
+    color: #3B271D;
+}
+.navbar {
+    position: fixed;
+    width: 16vw;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    /* margin-left: 0px; */
+    /* margin-top: -12.7vh; */
+    
+    background: #3B271D;
+}
+.logo{
+    position: absolute;
+    width: 70px;
+    height: 90px;
+    left: 2vw;
+    top: 1.8vw;
+    
+    }
+.profileLogo{
+    position: absolute;
+width: 95px;
+height: 95px;
+right: 2.5vw;
+top: 1.5vw;
+}
+.friends{
+    position: absolute;
+    width: 127px;
+    height: 47px;
+    left: 4vw;
+    top: 300px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    color: #EFE0BB;
+}
+.explore{
+    position: absolute;
+    width: 210px;
+    height: 47px;
+    left: 4vw;
+    top: 200px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    text-decoration: none;
+    color: #C7934E;
+}
+div.container{
+    width: 45vw;
+    margin: auto;
+}
