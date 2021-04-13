@@ -1,7 +1,7 @@
 
 html, body {
     min-height: 100%;
-    background: #FBF3DF;
+    background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url("pictures/background.png");
     color: black;
     font-family: 'Roboto', sans-serif;
 }
@@ -20,16 +20,17 @@ body, ul, ol {
     font-size: 70px;
 }
 #coffee {
-    color:#A15740;
+    color:#A05E2B;
 }
 
 #login {
     position: absolute;
     width: 83px;
     height: 35px;
-    left: 71%;
-    top: 6%;
-
+    left: 78%;
+    top: 7%;
+    text-decoration: none;
+    color: #3B271D;
     font-size: 25px;
 }
 
@@ -37,16 +38,16 @@ body, ul, ol {
     position: absolute;
     width: 7%;
     height: 5%;
-    left: 78%;
+    left: 85%;
     top: 8%;
 
-    background: #DFD7C1;
+    background: #3B271D;
     border-radius: 40px;
     border: none;
 
     font-family: Roboto;
     font-size: 24px;
-    color: white;
+    color: #EFE0BB;
 }
 #signup:hover {
     -o-transition:.2s; /* opera > 12.1 */
@@ -57,7 +58,7 @@ body, ul, ol {
 
     cursor: pointer;
     outline: none;
-    color: #A15740;
+    color: #C7934E;
   
 }
 #signup:focus {
@@ -75,4 +76,60 @@ body, ul, ol {
 }
 #main-title {
     font-size: 80px;
+}
+
+/* START OF SLIDING ANIMATION */
+div.slide-right {
+  width:100%;
+  overflow:hidden;
+}
+div.slide-right p {
+  animation: 2.5s slide-right;
+  line-height: 30px;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -50%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+div.slide-right-delay {
+    width:100%;
+    overflow:hidden;
+    animation-delay: 1s;
+  }
+  div.slide-right-delay p {
+    animation: 4s slide-right;
+    line-height: 30px;
+  }
+  
+  @keyframes slide-right {
+    from {
+      margin-left: -50%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+/* END OF SLIDING ANIMATION */
+
+div.description{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 2vw;
+    top: 22vh;
+
+    font-size: 25px;
 }
