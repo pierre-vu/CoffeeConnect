@@ -106,7 +106,7 @@ div.slide-right-delay {
     animation-delay: 1s;
   }
   div.slide-right-delay p {
-    animation: 4s slide-right;
+    animation: 3s slide-right;
     line-height: 30px;
   }
   
