@@ -1,7 +1,7 @@
 {
   "name": "cfcn",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "home.js",
   "dependencies": {
     "mysql": "^2.18.1",
     "pg": "^8.6.0",
