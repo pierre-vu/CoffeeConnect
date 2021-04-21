@@ -1,34 +1,55 @@
-const axios = require("axios")
+const apiKey = 'prj_live_pk_32283390146f458ed6a90d2499e7bff510911e0f';
 
-let API_KEY = "szhgoYUtJ9ueJRjzpQdrreAMJD3s1qEN1LPcjx2kZEWWgqxhcQvgqghFNLgtg4X3dTbgb3PMet9CDshWCo9V_L8ZveySGXj1As42vBNxRCzQ8yonIxZ_N-crtIF4YHYx"
+const app = document.getElementById('Coffee-Shop-Cards');
+var lat = 30.615514500000003;
+var long = -96.3332523;
+const container = document.createElement('div');
+container.setAttribute('class', 'container');
+app.appendChild(container);
+navigator.geolocation.getCurrentPosition(getPosition);
+function getPosition(position){
+  lat = position.coords.latitude;
+  console.log(lat);
+  long = position.coords.longitude;
+  console.log(long);
+}
+var request = new XMLHttpRequest();
+request.open('GET', 'https://api.radar.io/v1/search/places?categories=coffee-shop&near=' + lat + '%2C' + long, true);
+request.setRequestHeader("Authorization", apiKey);
+request.onload = function () {
+  // Begin accessing JSON data here
+  var data = JSON.parse(request.response);
+  // var data = JSON.stringify(this.response);
+  // data = JSON.parse(data);
 
-// REST
-let yelpREST = axios.create({
-  baseURL: "https://api.yelp.com/v3/",
-  headers: {
-    Authorization: `Bearer ${API_KEY}`,
-    "Content-type": "application/json",
-  },
-})
+  if (request.status >= 200 && request.status < 400) {
+    data.places.forEach(places => {
+      const post = document.createElement('div');
+      post.setAttribute('class', 'post');
 
-yelpREST(ENDPOINT, { params: { key: value } }).then(({ data }) => {
+      const h2 = document.createElement('h2');
+      h2.textContent = places.name;
+      const span = document.createElement('span');
+      span.textContent = places.location.coordinates;
 
-})
+      // const p = document.createElement('p');
+      // var text = document.createTextNode("Gender: " + person.gender);
+      // p.appendChild(text);
+      // movie.description = movie.description.substring(0, 300);
+      // p.textContent = `${movie.description}...`;
 
-yelpREST("/businesses/search", {
-    params: {
-      location: "college station, tx",
-      term: "coffee",
-      limit: 10,
-    },
-  }).then(({ data }) => {
-    let { businesses } = data
-    businesses.forEach((b) => {
-        const card = document.createElement('div');
-        card.setAttribute('class', 'card');
+      container.appendChild(post);
+      post.appendChild(h2);
+      post.appendChild(span);
+    });
 
-        const h2 = document.createElement('h2');
-        h2.textContent = b.name;
-       console.log("Name: ", b.name)
-    })
-  })
+    console.log(data);
+
+  } else {
+    const errorMessage = document.createElement('marquee');
+    errorMessage.textContent = `Gah, it's not working!`;
+    app.appendChild(errorMessage);
+  }
+}
+
+request.send();
