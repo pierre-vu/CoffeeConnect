@@ -1,5 +1,27 @@
 <!DOCTYPE html>
+
 <html>
+<script>
+const { Client } = require('pg');
+
+const client = new Client({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
+});
+
+client.connect();
+
+client.query('SELECT * FROM feed;', (err, res) => {
+  if (err) throw err;
+  for (let row of res.rows) {
+    console.log(JSON.stringify(row));
+  }
+  client.end();
+});
+	
+</script>
 <head>
 	<title>Coffee Shops Feed</title>
 	<link href="friendsfeed.css" rel="stylesheet" type = "text/css">
@@ -51,109 +73,24 @@
         </div>
 
         <!-- Post 2 -->
-        <div class = "container">
-            <div class = "post">
-                <div>
-                    <a href = "profile.html" style = "text-decoration: none;">
-                        <h2>Nicholas Soliman</h2>
-                    </a>
-                    <span>10 minutes ago...</span>
-                </div>
-                <div>
-                    <p>Just visited Carport and the coffee was soooo good! It was also reasonably priced. I hate spending $7+ dollars on coffee, but I got a wonderful house brew for only $3! I highly recommend to anyone in the area :)</p>
-                </div>
-            </div>
-        </div>
+        
 
         <!-- Post 3 -->
-        <div class = "container">
-            <div class = "post">
-                <div>
-                    <a href = "profile.html" style = "text-decoration: none;">
-                        <h2>Nicholas Soliman</h2>
-                    </a>
-                    <span>10 minutes ago...</span>
-                </div>
-                <div>
-                    <p>Just visited Carport and the coffee was soooo good! It was also reasonably priced. I hate spending $7+ dollars on coffee, but I got a wonderful house brew for only $3! I highly recommend to anyone in the area :)</p>
-                </div>
-            </div>
-        </div>
-
+        
         <!-- Post 4 -->
-        <div class = "container">
-            <div class = "post">
-                <div>
-                    <a href = "profile.html" style = "text-decoration: none;">
-                        <h2>Nicholas Soliman</h2>
-                    </a>
-                    <span>10 minutes ago...</span>
-                </div>
-                <div>
-                    <p>Just visited Carport and the coffee was soooo good! It was also reasonably priced. I hate spending $7+ dollars on coffee, but I got a wonderful house brew for only $3! I highly recommend to anyone in the area :)</p>
-                </div>
-            </div>
-        </div>
+        
 
         <!-- Post 5 -->
-        <div class = "container">
-            <div class = "post">
-                <div>
-                    <a href = "profile.html" style = "text-decoration: none;">
-                        <h2>Nicholas Soliman</h2>
-                    </a>
-                    <span>10 minutes ago...</span>
-                </div>
-                <div>
-                    <p>Just visited Carport and the coffee was soooo good! It was also reasonably priced. I hate spending $7+ dollars on coffee, but I got a wonderful house brew for only $3! I highly recommend to anyone in the area :)</p>
-                </div>
-            </div>
-        </div>
+       
 
         <!-- Post 6 -->
-        <div class = "container">
-            <div class = "post">
-                <div>
-                    <a href = "profile.html" style = "text-decoration: none;">
-                        <h2>Nicholas Soliman</h2>
-                    </a>
-                    <span>10 minutes ago...</span>
-                </div>
-                <div>
-                    <p>Just visited Carport and the coffee was soooo good! It was also reasonably priced. I hate spending $7+ dollars on coffee, but I got a wonderful house brew for only $3! I highly recommend to anyone in the area :)</p>
-                </div>
-            </div>
-        </div>
+        
 
         <!-- Post 7 -->
-        <div class = "container">
-            <div class = "post">
-                <div>
-                    <a href = "profile.html" style = "text-decoration: none;">
-                        <h2>Nicholas Soliman</h2>
-                    </a>
-                    <span>10 minutes ago...</span>
-                </div>
-                <div>
-                    <p>Just visited Carport and the coffee was soooo good! It was also reasonably priced. I hate spending $7+ dollars on coffee, but I got a wonderful house brew for only $3! I highly recommend to anyone in the area :)</p>
-                </div>
-            </div>
-        </div>
+        
 
         <!-- Post 8 -->
-        <div class = "container">
-            <div class = "post">
-                <div>
-                    <a href = "profile.html" style = "text-decoration: none;">
-                        <h2>Nicholas Soliman</h2>
-                    </a>
-                    <span>10 minutes ago...</span>
-                </div>
-                <div>
-                    <p>Just visited Carport and the coffee was soooo good! It was also reasonably priced. I hate spending $7+ dollars on coffee, but I got a wonderful house brew for only $3! I highly recommend to anyone in the area :)</p>
-                </div>
-            </div>
-        </div>
+        
 
     </div>
 </body>
