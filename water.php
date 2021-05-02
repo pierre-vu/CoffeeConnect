@@ -10,6 +10,7 @@
     <input type="submit" name="submit">
     
   </form>
+    <div><p><iframe src="data.txt" width=200 height=400 frameborder=0 ></iframe></p></div>
 </body>
 </html>
 <?php
