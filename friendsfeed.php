@@ -45,7 +45,7 @@
         </div>
 
         <div class="form-popup" id="myForm">
-            <form action="/action_page.php" class="form-container">
+            <form method="post" class="form-container">
                 <h1>Post Creation</h1>
 
                 <!-- <label for="email"><b>Visibility: All friends</b></label> -->
