@@ -89,7 +89,7 @@
                 </div>
                 <div>
                     <p>Just visited Carport and the coffee was soooo good! It was also reasonably priced. I hate spending $7+ dollars on coffee, but I got a wonderful house brew for only $3! I highly recommend to anyone in the area :)</p>
-                    <div><p><iframe src="data.txt" width=200 height=400 frameborder=0 ></iframe></p></div>
+                    <div><p><iframe src="data.txt" style="text-decoration: none; color: #EFE0BB;" frameborder=0 ></iframe></p></div>
                 </div>
             </div>
         </div>
