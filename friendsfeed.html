@@ -35,27 +35,61 @@
             <div class = "friends">
                 <a href="friendsfeed.html" style= "text-decoration: none; color: #C7934E;">friends</a>
             </div>
+            
         </div>
+
+        <!--Create post Button-->
+        <!-- <button class="open-button" onclick="openForm()">Open Form</button> -->
+        <div class = "post-creation">
+            <img src="pictures/post-creation-icon.png" onclick="openForm()">
+        </div>
+
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Post Creation</h1>
+
+                <!-- <label for="email"><b>Visibility: All friends</b></label> -->
+                <input type="text" placeholder="Write here..." name="email" required>
+
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+            </form>
+        </div>
+
+        <script>
+            function openForm() {
+            document.getElementById("myForm").style.display = "block";
+            }
+
+            function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+            }
+        </script>
 
         <!-- Post 1 -->
         
         <div class = "container">
             <div class = "post">
-                <form action="friendsfeed.php" method="post">
-          What is your name?<br>
-          <input type="text" name="field1"><br>
-            <input type="text" name="field2"><br>
-           <input type="submit" value="Submit">
-        </form>
+                
+<html>
+<body>
+
+<div id="result"></div>
+
+    
+
+</body>
+</html>
+
                 <div>
                     <a href = "profile.html" style = "text-decoration: none;">
                         <h2>Nicholas Soliman</h2>
                     </a>
                     <span>10 minutes ago...</span>
                 </div>
-                <input type = "button" onclick = "myfunction()" value = "Display">  
                 <div>
                     <p>Just visited Carport and the coffee was soooo good! It was also reasonably priced. I hate spending $7+ dollars on coffee, but I got a wonderful house brew for only $3! I highly recommend to anyone in the area :)</p>
+                    
                 </div>
             </div>
         </div>
